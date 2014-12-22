@@ -5,6 +5,9 @@
     "type": "git",
     "url": ""
   },
+  "scripts": {
+    "start": "node --harmony demo-workshopper.js"
+  },
   "license": "BSD-3-Clause",
   "bin": "./demo-workshopper.js",
   "dependencies": {
