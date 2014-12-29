@@ -3,4 +3,4 @@ function* foo () {
   yield 2;
 }
 
-console.log( foo().next() );
+console.log(1231);
