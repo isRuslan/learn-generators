@@ -44,5 +44,7 @@ console.log(addTwo.next().value); // 14
 
 ```
 
-Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+Docs:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+http://wiki.ecmascript.org/doku.php?id=harmony:generators
 
