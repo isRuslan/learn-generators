@@ -1,7 +1,7 @@
 [
-    "INTRO: RUN -> STOP -> RUN", 
-    "GENERATOR <=> ITERATOR",
-    "CATCH ERROR!"
+    "RUN STOP RUN", 
+    "GENERATOR ITERATOR",
+    "CATCH ERROR!",
     "ASYNC TO SYNC",
     "INHERITANCE"
 ]
