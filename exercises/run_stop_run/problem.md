@@ -12,8 +12,7 @@ function *foo () {
 var G = foo();
 
 console.log( G.next() ); // { value: 'woo', done: false }
-// 'bar', 'inside foo'
-console.log( G.next('bar') ); // { value: undefined, done: true }
+console.log( G.next('bar') ); // 'bar', 'inside foo' { value: undefined, done: true }
 ```
 
 What was that? You could noticed some new things.

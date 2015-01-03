@@ -17,7 +17,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 http://wiki.ecmascript.org/doku.php?id=harmony:iterators
 
 ## Task
-Write a factorial generator function `factorial` that get number to solve
+Write a factorial generator function `factorial` that get number to calculate
 and iterate over it. Not a recursion. Loop-way.
 **Follow this boilerplate:**
 ```js
