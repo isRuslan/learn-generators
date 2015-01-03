@@ -1,0 +1,4 @@
+Generator inside generator.
+
+## Info
+
