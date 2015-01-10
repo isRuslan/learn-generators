@@ -1,9 +1,9 @@
 Generator inside generator.
 
 ## Info
-We can delegate iteration control from our generator to another one.
-`yield *` keyword will help us, `*` also means that yield expression
-is a generator, so we can send message to inside generator too.
+We can delegate iteration control from our generator to another one. `yield *`
+will do the trick, `*` means that **yield expression** is a generator too,
+so we can send message to it.
 
 ```js
 function *foo() {
@@ -23,7 +23,7 @@ for (var v of main()) {
 ```
 
 ## Docs
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
+ - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
 
 ## Task
 Write a generator function that following this rules:

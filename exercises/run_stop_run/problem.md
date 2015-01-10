@@ -2,7 +2,7 @@ Introduction to ES6 Generators.
 
 ## Info
 Generators are functions which can be stoped while a process
-and run later, as many times, as you want.
+and run later, as many times, as you want. Example:
 
 ```js
 function *foo () {
@@ -21,29 +21,27 @@ What was that? You could noticed some new things.
 concat it: `function` keyword or the name of a function.
 
 **2)** The `yield` expression - stop the generator and send out `woo` string.
-And then, after restarting the generator (see 3. below), we can send 'bar'
+And then, after restarting the generator (see **3)** below), we can send 'bar'
 string in 'foo' which one will be result of `yield` expression.
 Context between all `run->stop->run` will be saved.
 
 **3)** `foo` function has `next` method that return object like
 {value: VALUE_FROM_YIELD, done: IS_THIS_FINISHED}.
 
+## Docs
+ - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
+ - http://wiki.ecmascript.org/doku.php?id=harmony:generators
+
 ## Task
 Write a generator function `addTwoGenerator` that will add 2
 to generator first argument on each `next()` call.
 **Follow this boilerplate:**
 ```js
-function *addTwoGenerator (value) {
-  // your code here
+function *addTwo (value) {
+  // YOUR CODE HERE
 }
 
-var addTwo = addTwoGenerator(10);
-console.log(addTwo.next().value); // 12
-console.log(addTwo.next().value); // 14
-
+var adder = addTwo(10);
+console.log(adder.next().value); // 12
+console.log(adder.next().value); // 14
 ```
-
-Docs:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
-http://wiki.ecmascript.org/doku.php?id=harmony:generators
-

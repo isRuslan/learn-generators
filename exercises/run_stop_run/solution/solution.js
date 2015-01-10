@@ -1,4 +1,4 @@
-function *addTwoGenerator (value) {
+function *addTwo (value) {
   var to = value;
   while( true ) {
     to+=2;
@@ -6,6 +6,6 @@ function *addTwoGenerator (value) {
   }
 }
 
-var addTwo = addTwoGenerator(10);
-console.log(addTwo.next().value);
-console.log(addTwo.next().value);
+var adder = addTwo(10);
+console.log(adder.next().value);
+console.log(adder.next().value);
