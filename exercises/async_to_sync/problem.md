@@ -2,7 +2,12 @@ Look sync. Do async.
 
 ## Info
 Generators allows us to hide the **asynchronicity** as a implementation
-detail and write synchronous-looking code. Example:
+detail and write easy-reading, maintanable,  synchronous-looking code.
+
+Generators can *pause their execution** while async calls complete.
+
+For example, you want to read current directory with `fs.readdir(dir, cb)`
+with no falling to callback land:
 
 ```js
 var fs = require('fs');
@@ -23,9 +28,9 @@ run(function* (done) {
 });
 
 ```
-Here we read `exercises` directory to get list of directories inside,
-`readdir` will not give us an immediate result, it requires callback
-function as a second paramenter where where we can get the result.
+Here we run generator that stops to wait `readdir` job and run when it is complete.
 
-But, we can improve it. Generators can **wait for readdir finishes** 
 
+
+## Docs
+ - http://nodejs.org/api/fs.html#fs_fs_readdir_path_callback
