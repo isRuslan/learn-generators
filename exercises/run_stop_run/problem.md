@@ -33,15 +33,16 @@ Context between all `run->stop->run` will be saved.
  - http://wiki.ecmascript.org/doku.php?id=harmony:generators
 
 ## Task
-Write a generator function `addTwoGenerator` that will add 2
-to generator first argument on each `next()` call.
+Write a `range` generator-function that takes **from** and **to** arguments.
+And run the numbers within the specified range.
 **Follow this boilerplate:**
 ```js
-function *addTwo (value) {
-  // YOUR CODE HERE
+function *range(from, to) {
+  // your code goes here
 }
 
-var adder = addTwo(10);
-console.log(adder.next().value); // 12
-console.log(adder.next().value); // 14
+for (var r of range(5, 10)) {
+    console.log( r );
+}
+// 5, 6, 7, 8, 9, 10
 ```

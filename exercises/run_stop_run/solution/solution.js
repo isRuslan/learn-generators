@@ -1,11 +1,9 @@
-function *addTwo (value) {
-  var to = value;
-  while( true ) {
-    to+=2;
-    yield to;
+function *range(from, to) {
+  for(var i = from; i <= to; i++) {
+    yield i;
   }
 }
 
-var adder = addTwo(10);
-console.log(adder.next().value);
-console.log(adder.next().value);
+for (var r of range(5, 10)) {
+    console.log( r );
+}

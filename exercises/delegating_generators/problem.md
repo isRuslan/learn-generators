@@ -26,17 +26,16 @@ for (var v of main()) {
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
 
 ## Task
-Write a generator function that following this rules:
- - iterates **5 times** through [1..5] sequence;
- - return index of each step (1,2,3,4,5);
- - uses **maximum 2 yield** keyword.
+Write generator-function `flat` that takes nested array inside and flatten it.
 **Follow this boilerplate:**
-function *bar () {
+```js
+function *flat () {
   // your code goes here  
 }
-for (var i of bar()) {
-    console.log( i );
+
+var A = [1, [2, [3, 4], 5], 6];
+for (var f of flat(A)) {
+    console.log( f );
 }
-// 1 2 3 4 5
-
-
+// 1 2 3 4 5 6
+```
