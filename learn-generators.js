@@ -8,9 +8,9 @@ function fpath (f) {
 }
 
 workshopper({
-    name        : 'demo-workshopper',
-    title       : 'Demo Workshopper',
-    subtitle    : 'Learn how to create a workshopper lesson',
+    name        : 'learn-generators',
+    title       : 'Learn Generators',
+    subtitle    : 'An Intro to ES6 generators via a set of self-guided workshops.',
     appDir      : __dirname,
     menuItems   : [],
     exerciseDir : fpath('./exercises/')

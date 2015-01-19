@@ -1,16 +1,27 @@
 {
-  "name": "generators-workshop",
-  "version": "0.1.0",
+  "name": "learn-generators",
+  "description": "Learn ES6 generators in practice.",
+  "author": "Ruslan Ismagilov <is.ismagilov@gmail.com>",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": ""
   },
+  "license": "MIT",
   "scripts": {
-    "test": "node test.js",
-    "start": "node demo-workshopper.js"
+    "start": "node learn-generators.js"
   },
-  "license": "BSD-3-Clause",
-  "bin": "./demo-workshopper.js",
+  "bin": {
+   "learn-generators": "./learn-generators.js"
+  },
+  "keywords": [
+    "es6",
+    "generators",
+    "iterators",
+    "learn",
+    "tutorial",
+    "workshopper"
+  ],
   "dependencies": {
     "bl": "^0.8.0",
     "colors-tmpl": "0.1.0",
@@ -20,8 +31,5 @@
     "workshopper-boilerplate": "0.0.1",
     "workshopper-exercise": "^1.1.0",
     "workshopper-wrappedexec": "^0.1.1"
-  },
-  "devDependencies": {
-    "glob": "^4.3.2"
   }
 }
