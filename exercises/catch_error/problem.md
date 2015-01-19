@@ -10,13 +10,14 @@ That means we can use `try {...} catch () {}` statements easily.
 function *dummy () {
   try {
     null.func(); // mmm...
-    yield 'you will never see me';
   } catch (e) {
     console.log('Caught exepction: %s', e);
   }
+  yield 'You can get me.';
 }
 dummy().next();
 // Caught exepction: TypeError: Cannot read property 'func' of null
+{ value: 'You can get me.', done: false }
 ```
 
 Also, generator function has `throw()` method, that allows you to send to generator
@@ -36,3 +37,6 @@ catch (errFromIt) {
     console.log('Error: %s ', errFromIt); // Error: BOOO from outside
 }
 ```
+
+## Task
+This code is broken.
