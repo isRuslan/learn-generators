@@ -25,8 +25,9 @@ function run (generator) {
 }
 
 run(function* (done) {
+  // read `learn-generators` exercises folder
   var exercises = yield fs.readdir('exercises', done);
-  console.log(exercises); // [ 'async_to_sync', ..., 'run_stop_run' ]
+  console.log(exercises); // [ 'look_sync_do_async', ..., 'run_stop_run' ]
 });
 
 ```
@@ -47,15 +48,17 @@ flow control. How:
  
 ## Task
 Add error handing to this boilerplate. Teach `run` to throw on exeption and
-catch that in generator. `firstFile` should be `null` if dosen't exist.
+catch that in generator. `firstFile` should be `null` if it dosen't exist.
+**Follow this boilerplate:**
 ```js
 var fs = require('fs');
 
 function run (generator) {
-  // improve previous `run`
+  // improve `run` above
 }
 
 run(function* (done) {
+  // catch exeption
   var dirFiles = yield fs.readdir('NoNoNoNo', done); // No such dir
   var firstFile = dirFiles[0]; // TypeError: Cannot read property '0' of undefined
   
