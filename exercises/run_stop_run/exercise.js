@@ -1,11 +1,8 @@
-var through2 = require('through2');
-var hyperquest = require('hyperquest');
-var bl = require('bl');
 var exercise = require('workshopper-exercise')();
 var filecheck = require('workshopper-exercise/filecheck');
 var execute = require('workshopper-exercise/execute');
 var comparestdout = require('workshopper-exercise/comparestdout');
-
+var wrappedexec   = require('workshopper-wrappedexec');
 // the output will be long lines so make the comparison take that into account
 exercise.longCompareOutput = true;
 
@@ -14,6 +11,11 @@ exercise = filecheck(exercise);
 
 // execute the solution and submission in parallel with spawn()
 exercise = execute(exercise);
+  
+exercise = comparestdout(exercise)
+
+exercise = wrappedexec(exercise);
+exercise.wrapModule(require.resolve('./wrap'))
 
 function rndport() {
     return 1024 + Math.floor(Math.random() * 64511);
@@ -33,6 +35,11 @@ exercise.addSetup(function (mode, callback) {
     process.nextTick(callback);
 });
 
-exercise = comparestdout(exercise)
+exercise.addVerifyProcessor(function (callback) {
+  //console.log(exercise);
+  //this.emit(exercise.wrapData.usedMap ? 'pass' : 'fail', 'Used Array#map()')
+  callback(null, true)
+})
+
 
 module.exports = exercise;

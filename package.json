@@ -12,7 +12,7 @@
     "start": "node learn-generators.js"
   },
   "bin": {
-   "learn-generators": "./learn-generators.js"
+    "learn-generators": "./learn-generators.js"
   },
   "keywords": [
     "es6",
@@ -30,6 +30,6 @@
     "workshopper": "^1.3.3",
     "workshopper-boilerplate": "0.0.1",
     "workshopper-exercise": "^1.1.0",
-    "workshopper-wrappedexec": "^0.1.1"
+    "workshopper-wrappedexec": "^0.1.2"
   }
 }
