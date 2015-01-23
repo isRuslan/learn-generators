@@ -17,11 +17,11 @@ var fs = require('fs');
 function run (generator) {
   var it = generator(next);
 
-  function next (err, result) {
+  function go (err, result) {
     it.next(result);
   }
 
-  next();  
+  go();  
 }
 
 run(function* (done) {
@@ -38,8 +38,8 @@ But how does `done` know about our generator? How will it start him again?
 Look at `run` wrapper. It is a little **thunk** that helps us to manage generators
 flow control. How:
 **1)** create new generator-iterator object;
-**2)** create `next` (future `done`) function that will run the generator;
-**3)** pass `next` inside new generator-iterator object;
+**2)** create `go` (future `done`) function that will run the generator;
+**3)** pass `go` inside new generator-iterator object;
 **4)** start generator **once at the beginning**.
 
 ## Docs

@@ -8,7 +8,7 @@ function run (generator) {
   var it = generator();
 
   function go(result) {
-    if (result.dane) return result.value;
+    if (result.done) return result.value;
     
     return result.value.then(function (value) {
       return go(it.next(value));
@@ -23,7 +23,7 @@ function run (generator) {
 
 run(function* () {
   try {
-    var foo = yield getFoo;
+    var foo = yield getFoo();
     console.log(foo);
   } catch (e) {
     console.log(e);

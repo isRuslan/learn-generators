@@ -3,12 +3,12 @@ var fs = require('fs');
 function run (generator) {
   var it = generator(next);
 
-  function next (err, result) {
+  function go (err, result) {
     if (err) it.throw(err)
     it.next(result);
   }
 
-  next();  
+  go(); 
 }
 
 run(function* (done) {
