@@ -20,4 +20,4 @@ This tutorial was built using @rvagg's [workshopper](https://github.com/rvagg/wo
 
 
 ## License
-MIT
+MIT © [Ruslan Ismagilov](https://github.com/isRuslan)
