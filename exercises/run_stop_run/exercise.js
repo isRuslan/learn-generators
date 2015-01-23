@@ -39,20 +39,11 @@ exercise.addSetup(function (mode, callback) {
 });
 // add a processor only for 'verify' calls
 exercise.addVerifyProcessor(function (callback) {
-  var usedSync  = false
-    , usedAsync = false
-
-  Object.keys(exercise.wrapData || {}).forEach(function (m) {
-    //if (/Sync$/.test(m)) {
-      //usedSync = true
-      //this.emit('pass', this.__('pass.sync', {method: 'fs.' + m + '()'}))
-    //} else {
-      //usedAsync = true
-      //this.emit('fail', this.__('fail.async', {method: 'fs.' + m + '()'}))
-    //}
-  }.bind(this))
-
-  callback(null, !usedAsync && usedSync)
+  var usedGenerators = exercise.wrapData.usedGenerators;
+  
+  !usedGenerators && this.emit('fail', 'Seems like you haven\'t used generators %(');
+    
+  callback(null, usedGenerators);
 })
 
 module.exports = exercise;
