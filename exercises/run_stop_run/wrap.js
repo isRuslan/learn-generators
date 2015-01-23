@@ -1,5 +1,5 @@
 function wrap (ctx) {
-  console.log(11111)
+console.log(ctx.$captureStack('yield'))
   var map = Array.prototype.map
 
   ctx.usedMap = false
@@ -8,7 +8,6 @@ function wrap (ctx) {
 
     // $captureStack is a utility to capture a stacktrace array
     var stack = ctx.$captureStack(Array.prototype.map)
-
     // inspect the first callsite of the stacktrace and see if the
     // filename matches the mainProgram we're running, if so, then
     // the user has used Array#map!

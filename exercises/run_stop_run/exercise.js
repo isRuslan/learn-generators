@@ -26,20 +26,33 @@ exercise.addSetup(function (mode, callback) {
     this.submissionPort = rndport();
     this.solutionPort = this.submissionPort + 1;
 
-    this.submissionArgs = [this.submissionPort];
-    this.solutionArgs = [this.solutionPort];
+    //this.submissionArgs = [this.submissionPort];
+    //this.solutionArgs = [this.solutionPort];
+    
+    this.submissionArgs.unshift(this.submissionPort);
+    this.solutionArgs.unshift(this.solutionPort);
     
     this.submissionCommand = [ '--harmony', this.submission ].concat(this.submissionArgs);
     this.solutionCommand = [ '--harmony', this.solution ].concat(this.solutionArgs);
 
     process.nextTick(callback);
 });
-
+// add a processor only for 'verify' calls
 exercise.addVerifyProcessor(function (callback) {
-  //console.log(exercise);
-  //this.emit(exercise.wrapData.usedMap ? 'pass' : 'fail', 'Used Array#map()')
-  callback(null, true)
-})
+  var usedSync  = false
+    , usedAsync = false
 
+  Object.keys(exercise.wrapData || {}).forEach(function (m) {
+    //if (/Sync$/.test(m)) {
+      //usedSync = true
+      //this.emit('pass', this.__('pass.sync', {method: 'fs.' + m + '()'}))
+    //} else {
+      //usedAsync = true
+      //this.emit('fail', this.__('fail.async', {method: 'fs.' + m + '()'}))
+    //}
+  }.bind(this))
+
+  callback(null, !usedAsync && usedSync)
+})
 
 module.exports = exercise;
