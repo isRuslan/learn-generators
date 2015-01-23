@@ -1,4 +1,4 @@
-Learn ES6 Generators :zap: 
+Learn ES6 Generators
 ================
 
 >An Intro to ES6 generators via a set of self-guided workshops.
@@ -16,7 +16,7 @@ learn-generators
 
 ## Thanks rvagg
 
-This tutorial was built using @rvagg's [workshopper](https://github.com/rvagg/workshopper) framework.
+This tutorial was built using @rvagg [workshopper](https://github.com/rvagg/workshopper) framework.
 
 
 ## License
