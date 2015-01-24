@@ -2,7 +2,7 @@ Look sync. Do async.
 
 ## Info
 Generators allows us to hide the **asynchronicity** as a implementation
-detail and write easy-reading, maintanable, synchronous-looking code.
+detail and write easy-reading, maintainable, synchronous-looking code.
 
 Wat?
 
@@ -15,7 +15,7 @@ with no falling to callback land:
 var fs = require('fs');
 
 function run (generator) {
-  var it = generator(next);
+  var it = generator(go);
 
   function go (err, result) {
     it.next(result);
@@ -31,7 +31,7 @@ run(function* (done) {
 });
 
 ```
-Here we run the generator that stops and wait `readdir` job. Then we passed `done`
+Here we run the generator that stops and wait for `readdir` job. Then we passed `done`
 as callback function that will run our generator when the job is complete.
 
 But how does `done` know about our generator? How will it start him again?
@@ -47,8 +47,8 @@ flow control. How:
  - http://en.wikipedia.org/wiki/Thunk
  
 ## Task
-Add error handing to this boilerplate. Teach `run` to throw on exeption and
-catch that in generator. `firstFile` should be `null` if it dosen't exist.
+Add error handling to this boilerplate. Teach `run` to throw on exception and
+catch that in generator. `firstFile` should be `null` if it doesn't exist.
 **Follow this boilerplate:**
 ```js
 var fs = require('fs');
@@ -58,7 +58,7 @@ function run (generator) {
 }
 
 run(function* (done) {
-  // catch exeption
+  // catch exception
   var dirFiles = yield fs.readdir('NoNoNoNo', done); // No such dir
   var firstFile = dirFiles[0]; // TypeError: Cannot read property '0' of undefined
   

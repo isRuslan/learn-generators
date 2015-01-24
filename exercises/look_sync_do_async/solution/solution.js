@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 function run (generator) {
-  var it = generator(next);
+  var it = generator(go);
 
   function go (err, result) {
     if (err) it.throw(err)
@@ -12,10 +12,12 @@ function run (generator) {
 }
 
 run(function* (done) {
+  var firstFile;
   try {
     var dirFiles = yield fs.readdir('NoNoNoNo', done); // No such dir
+    firstFile = dirFiles[0];
   } catch (err) {
-    var firstFile = null;
+    firstFile = null;
   }
   
   console.log(firstFile);
