@@ -1,9 +1,9 @@
-Generator inside generator.
+Generators inside generators.
 
 ## Info
-We can delegate iteration control from our generator to another one. `yield *`
-will do the trick, `*` means that **yield expression** is a generator too,
-so we can send message to it.
+We can delegate iteration control from our generator to another one.
+`yield * expression` will do the trick, `*` means that **expression**
+is a generator too, so we can send message to it.
 
 ```js
 function *foo() {
@@ -26,8 +26,10 @@ for (var v of main()) {
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
 
 ## Task
-Write generator-function `flat` that takes nested array inside and flatten it.
+Write generator-function `flat` that takes nested array inside and flattens it.
+
 **Follow this boilerplate:**
+
 ```js
 function *flat () {
   // your code goes here  
