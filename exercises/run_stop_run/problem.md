@@ -1,8 +1,8 @@
 Introduction to ES6 Generators.
 
 ## Info
-Generators are functions which can be stoped while a process
-and run later, as many times, as you want. Example:
+Generators are functions which can be stopped while in process
+and run later as many times as you want. Example:
 
 ```js
 function *foo () {
@@ -11,31 +11,39 @@ function *foo () {
 }
 var G = foo();
 
-console.log( G.next() ); // { value: 'woo', done: false }
-console.log( G.next('bar') ); // 'bar', 'inside foo' { value: undefined, done: true }
+console.log( G.next() );
+// { value: 'woo', done: false }
+console.log( G.next('bar') );
+// 'bar', 'inside foo'
+// { value: undefined, done: true }
 ```
 
-What was that? You could noticed some new things.
+What was that? There are some new things to notice:
 
-**1)** `*` - just a sign that foo is generator. No matter where to
-concat it: `function` keyword or the name of a function.
+**1)** `*` - just a sign that foo is generator. You can put it anywhere between
+the `function` keyword and the function name, it does not matter exactly where.
 
 **2)** The `yield` expression - stop the generator and send out `woo` string.
-And then, after restarting the generator (see **3)** below), we can send 'bar'
-string in 'foo' which one will be result of `yield` expression.
-Context between all `run->stop->run` will be saved.
+This pauses the state of the generator until we call `next` (see **3)** below).
+We restart the generator by sending `bar` string into `foo` which becomes the 
+value returned by the `yield` expression inside `foo` (which gets assigned
+to `stop`). Context between all `run -> stop -> run` will be saved.
 
-**3)** `foo` function has `next` method that return object like
-{value: VALUE_FROM_YIELD, done: IS_THIS_FINISHED}.
+**3)** `foo` function has `next` method that returns an object like
+`{value: VALUE_FROM_YIELD, done: IS_THIS_FINISHED}`.
 
 ## Docs
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
  - http://wiki.ecmascript.org/doku.php?id=harmony:generators
 
 ## Task
+
 Write a `range` generator-function that takes **from** and **to** arguments.
-And run the numbers within the specified range.
+
+Print the numbers as strings within the specified range, one per line.
+
 **Follow this boilerplate:**
+
 ```js
 function *range(from, to) {
   // your code goes here
@@ -44,5 +52,5 @@ function *range(from, to) {
 for (var r of range(5, 10)) {
     console.log( r );
 }
-// 5, 6, 7, 8, 9, 10
+// should print: 5, 6, 7, 8, 9, 10
 ```
