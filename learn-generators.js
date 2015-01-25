@@ -10,8 +10,6 @@ function fpath (f) {
 
 workshopper({
     name        : 'learn-generators',
-    title       : 'Learn Generators',
-    subtitle    : 'An Intro to ES6 generators via a set of self-guided workshops.',
     appDir      : __dirname,
     languages   : ['en'],
     menuItems   : [{

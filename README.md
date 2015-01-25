@@ -21,7 +21,7 @@ learn-generators
 
 ## Thanks
 
-This tutorial was built using @rvagg [workshopper](https://github.com/rvagg/workshopper) framework.
+You can learn generators due to this people:
 
 <table>
 <thead>
@@ -33,7 +33,7 @@ This tutorial was built using @rvagg [workshopper](https://github.com/rvagg/work
 </tbody>
 </table>
 
-
+**Rod Vagg (@rvagg)** made this workshopper framework (⌐■_■)
 
 
 ## License
