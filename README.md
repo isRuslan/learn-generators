@@ -19,9 +19,21 @@ npm install learn-generators -g
 learn-generators
 ```
 
-## Thanks rvagg
+## Thanks
 
 This tutorial was built using @rvagg [workshopper](https://github.com/rvagg/workshopper) framework.
+
+<table>
+<thead>
+<tr><th align="left">Name</th><th>GitHub</th><th>Twitter</th></tr>
+</thead>
+<tbody>
+<tr><td align="left">Ruslan Ismagilov</td><td><a href="https://github.com/isRuslan">@isRuslan</a></td><td><a href="http://twitter.com/is_ruslan">@is_ruslan</a></td></tr>
+<tr><td align="left">Ilia Akhmadullin</td><td><a href="https://github.com/i-akhmadullin">@i-akhmadullin</a></td><td><a href="http://twitter.com/sidorares">@i_akhmadullin</a></td></tr>
+</tbody>
+</table>
+
+
 
 
 ## License

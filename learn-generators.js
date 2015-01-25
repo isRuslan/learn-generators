@@ -2,6 +2,7 @@
 
 const workshopper = require('workshopper'),
       path        = require('path')
+      credits     = require('./credits')
 
 function fpath (f) {
     return path.join(__dirname, f)
@@ -12,6 +13,10 @@ workshopper({
     title       : 'Learn Generators',
     subtitle    : 'An Intro to ES6 generators via a set of self-guided workshops.',
     appDir      : __dirname,
-    menuItems   : [],
+    languages   : ['en'],
+    menuItems   : [{
+        name : 'credits',
+        handler : credits
+    }],
     exerciseDir : fpath('./exercises/')
 })

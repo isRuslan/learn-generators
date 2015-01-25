@@ -1,0 +1,8 @@
+{yellow}{bold}You can learn generators due to this people:{/bold}{/yellow}
+
+{bold}Name                GitHub          Twitter{/bold}
+--------------------------------------------
+Ruslan Ismagilov    @isRuslan       @is_ruslan
+Ilia Akhmadullin    @i_akhmadullin  @i_akhmadullin
+
+{yellow}{bold}Rod Vagg (@rvagg){/yellow}{/bold} made this workshopper framework (⌐■_■)
