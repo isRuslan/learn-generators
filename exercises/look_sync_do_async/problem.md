@@ -1,7 +1,7 @@
 Look sync. Do async.
 
 ## Info
-Generators allows us to hide the **asynchronicity** as a implementation
+Generators allows us to hide the **asynchronicity** as an implementation
 detail and write easy-reading, maintainable, synchronous-looking code.
 
 Wat?
@@ -9,7 +9,7 @@ Wat?
 Generators can **pause their execution** while async calls complete.
 
 For example, you want to read current directory with `fs.readdir(dir, cb)`
-with no falling to callback land:
+with no falling back to callback land:
 
 ```js
 var fs = require('fs');
@@ -31,16 +31,21 @@ run(function* (done) {
 });
 
 ```
-Here we run the generator that stops and wait for `readdir` job. Then we passed `done`
-as callback function that will run our generator when the job is complete.
+Here we create a generator that stops and waits for `readdir` to finish.
 
-But how does `done` know about our generator? How will it start him again?
-Look at `run` wrapper. It is a little **thunk** that helps us to manage generators
-flow control. How:
-**1)** create new generator-iterator object;
-**2)** create `go` (future `done`) function that will run the generator;
-**3)** pass `go` inside new generator-iterator object;
-**4)** start generator **once at the beginning**.
+The key to making this work is the `run` function. The flow in `run` is:
+
+**1)** create new generator-iterator object (`it`);
+**2)** define the `go` function, which calls `it.next`;
+**3)** pass `go` to the new generator-iterator object;
+**4)** run `go` once with no arguments to start the generator
+
+In total `go` is called twice, once with no arguments (which starts the
+generator's execution) and second with the results of the `fs` call
+from the `yield`.
+
+If this doesn't make sense try inserting `console.log` statements and try to
+trace the execution flow of the program.
 
 ## Docs
  - http://nodejs.org/api/fs.html#fs_fs_readdir_path_callback
@@ -49,7 +54,9 @@ flow control. How:
 ## Task
 Add error handling to this boilerplate. Teach `run` to throw on exception and
 catch that in generator. `firstFile` should be `null` if it doesn't exist.
+
 **Follow this boilerplate:**
+
 ```js
 var fs = require('fs');
 
