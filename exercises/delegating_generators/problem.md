@@ -31,7 +31,7 @@ Write generator-function `flat` that takes nested array inside and flattens it.
 **Follow this boilerplate:**
 
 ```js
-function *flat () {
+function *flat (arr) {
   // your code goes here  
 }
 
