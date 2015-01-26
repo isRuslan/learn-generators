@@ -29,7 +29,8 @@ You can learn generators due to this people:
 </thead>
 <tbody>
 <tr><td align="left">Ruslan Ismagilov</td><td><a href="https://github.com/isRuslan">@isRuslan</a></td><td><a href="http://twitter.com/is_ruslan">@is_ruslan</a></td></tr>
-<tr><td align="left">Ilia Akhmadullin</td><td><a href="https://github.com/i-akhmadullin">@i-akhmadullin</a></td><td><a href="http://twitter.com/sidorares">@i_akhmadullin</a></td></tr>
+<tr><td align="left">Ilia Akhmadullin</td><td><a href="https://github.com/i-akhmadullin">@i-akhmadullin</a></td><td><a href="http://twitter.com/i_akhmadullin">@i_akhmadullin</a></td></tr>
+<tr><td align="left">Max Ogden</td><td><a href="https://github.com/maxogden">@maxogden</a></td><td><a href="http://twitter.com/maxogden">@maxogden</a></td></tr>
 </tbody>
 </table>
 
