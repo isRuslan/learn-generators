@@ -1,11 +1,13 @@
 Look sync. Make a promise.
 
 ## Info
-Another way to code `like a sync` - using **Promises**.
-As a **callback** before, we can wait for the promise resolution and yield that result.
+Another way to code `look sync` is using **Promises**.
 
-Let's take the same example as in **callback exercise** - read **exercise** directory,
-but with promises:
+Similar to **callbacks** before, we can also wait for a promise to resolve
+and yield that result.
+
+Let's take the same example as in the **callback exercise** - reading the
+**exercise** directory, but with promises:
 ```js
 var fs = require('fs');
 
@@ -22,15 +24,16 @@ function readDir(dir) {
 }
 
 run(function* () {
-  // almost the same generator as in callback exercise
+  // almost the same generator as in the callback exercise
   var exercises = yield readDir('exercises');
   console.log(exercises); // [ 'look_sync_do_async', ..., 'run_stop_run' ]
 });
 
 ```
-Here we defined `readDir` function that returns a promise with dir's content.
-All interesting stuff happens in `run` function - we **yielded `readDir` promise**,
-wait for resolution and went further.
+Here we defined a `readDir` function that returns a promise with dir's contents.
+All interesting stuff happens in the `run` function - we **yielded the
+`readDir` promise**, waited for resolution and then continued.
+
 How did `run` do that? This is your task.
 
 ## Docs
@@ -38,8 +41,10 @@ How did `run` do that? This is your task.
  - https://www.promisejs.org/
 
 ## Task
-Write `run` function that gets a generator as an argument, start it and
+
+Write `run` function that gets a generator as an argument, starts it and
 yields **promise value** `foo`. Use `run` from **callback exercise** as a example.
+
 **Follow this boilerplate:**
 ```js
 function askFoo () {
@@ -54,7 +59,7 @@ function run (generator) {
 
 run(function* () {
   // improve: errors?
-  var foo = yield aksFoo();
+  var foo = yield askFoo();
   console.log(foo);
 });
 ```
