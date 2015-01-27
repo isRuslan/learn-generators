@@ -7,8 +7,9 @@ Learn ES6 Generators
 
 [![NPM](https://nodei.co/npm/learn-generators.png?downloads=true&stars=true)](https://nodei.co/npm/learn-generators/)
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://github.com/isRuslan/learn-generators" data-text="JavaScript ES6 generators workshopper." data-via="is_ruslan">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<a href="https://twitter.com/intent/tweet?hashtags=nodeschool&via=isRuslan&original_referer=https://github.com/&text=Learn+ES6+Generators+with&tw_p=tweetbutton&url=https://github.com/isRuslan/learn-generators" target="_blank">
+  <img src="http://jpillora.com/github-twitter-button/img/tweet.png"></img>
+</a>
 
 ## Start learning
 
