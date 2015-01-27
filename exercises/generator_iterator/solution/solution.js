@@ -1,9 +1,8 @@
 function *factorial (n) {
   var result = 1;
-  while(n) {
-    yield result; 
-    result *= n;
-    --n;
+  for (var i = 1; i <= n; i++) {
+    result *= i;
+    yield result;
   }
 }
 
