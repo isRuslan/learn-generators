@@ -1,8 +1,14 @@
 #!/usr/bin/env node
 
-const workshopper = require('workshopper'),
-      path        = require('path')
-      credits     = require('./credits')
+const workshopper   = require('workshopper'),
+      path          = require('path'),
+      credits       = require('./credits'),
+      hasGenerators = require('has-generators')
+
+if(!hasGenerators) {
+  console.error('You need nodejs >= 0.11.x or iojs >= 1.0.x to work with generators.')
+  process.exit()
+}
 
 function fpath (f) {
     return path.join(__dirname, f)
