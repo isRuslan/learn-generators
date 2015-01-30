@@ -3,18 +3,15 @@
 const workshopper   = require('workshopper'),
       path          = require('path'),
       credits       = require('./credits'),
+      colors        = require('colors-tmpl')
       hasGenerators = require('has-generators')
 
-if(!hasGenerators) {
-  console.error('You need nodejs >= 0.11.x or iojs >= 1.0.x to work with generators.')
-  process.exit()
-}
 
 function fpath (f) {
     return path.join(__dirname, f)
 }
 
-workshopper({
+var learnGenerators = workshopper({
     name        : 'learn-generators',
     appDir      : __dirname,
     languages   : ['en'],
@@ -24,3 +21,8 @@ workshopper({
     }],
     exerciseDir : fpath('./exercises/')
 })
+
+if (!hasGenerators) {
+  console.error(colors(learnGenerators.__('error.has_generators')))
+  process.exit()
+}

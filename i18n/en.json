@@ -1,7 +1,10 @@
 {
-    "title"       : "Learn Generators",
-    "subtitle"    : "An Intro to ES6 generators via a set of self-guided workshops.",
-    "menu": {
-		"credits": "CREDITS"
-	}
+  "title": "Learn Generators",
+  "subtitle": "An Intro to ES6 generators via a set of self-guided workshops.",
+  "menu": {
+    "credits": "CREDITS"
+  },
+  "error": {
+    "has_generators": "{red}You need nodejs >= 0.11.x or iojs >= 1.0.x to work with generators.{/red}"
+  }
 }
