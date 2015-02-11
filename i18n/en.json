@@ -5,6 +5,6 @@
     "credits": "CREDITS"
   },
   "error": {
-    "has_generators": "{red}You need nodejs >= 0.11.x or iojs >= 1.0.x to work with generators.{/red}"
+    "has_generators": "{red}You need nodejs >= 0.11.x or iojs >= 1.0.x to work with generators.{/red}\n\nYou may find this useful:\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n{/bold} https://github.com/tj/n"
   }
 }
