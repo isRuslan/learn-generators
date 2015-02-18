@@ -4,7 +4,7 @@ function run (generator) {
   var it = generator(go);
 
   function go (err, result) {
-    if (err) it.throw(err)
+    if (err) return it.throw(err);
     it.next(result);
   }
 
