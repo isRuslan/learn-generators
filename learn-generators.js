@@ -1,5 +1,3 @@
-#!/usr/bin/env node --harmony
-
 const workshopper   = require('workshopper'),
       path          = require('path'),
       credits       = require('./credits'),

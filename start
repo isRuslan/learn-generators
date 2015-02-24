@@ -1,0 +1,4 @@
+#!/bin/bash
+# wrapper script to fix shebang none arguments
+
+node --harmony learn-generators.js $1 $2

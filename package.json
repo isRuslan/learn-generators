@@ -11,7 +11,7 @@
     "start": "./learn-generators.js"
   },
   "bin": {
-    "learn-generators": "./learn-generators.js"
+    "learn-generators": "./start"
   },
   "preferGlobal": true,
   "keywords": [
