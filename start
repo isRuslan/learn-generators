@@ -1,4 +1,8 @@
 #!/bin/bash
 # wrapper script to fix shebang none arguments
+# super hacky way %(
 
-node --harmony learn-generators.js $1 $2
+prefix=$(npm config get prefix)
+folder="$prefix/lib/node_modules/learn-generators"
+
+node --harmony $folder/learn-generators.js $1 $2
