@@ -2,7 +2,7 @@ Essayez de lancer/rattraper des erreurs avec les générateurs.
 
 ## Infos
 
-La meilleure chose que nous apportent les générateurs est la **synchronicité**.
+Le meilleur apport des générateurs est le **synchronisme**.
 Le code à l’intérieur des fonctions générateurs est synchrone, même si nous
 itérons sur les générateurs de façon asynchrone.
 
@@ -24,9 +24,9 @@ dummy().next();
 
 Par ailleurs, les fonctions générateurs ont une méthode `throw()` qui vous
 permet, en tant qu’appelant, de passer une exception au générateur, ce qui
-déclenchera son bloc `try`/`catch` éventuel.
+déclenchera son éventuel bloc `try`/`catch`.
 
-Remarquez que si le générateur n’a pas un tel bloc autour de son `yield`,
+Remarquez que si le générateur n’enveloppe pas son `yield` avec un tel bloc,
 l’exception ainsi transmise sera levée telle quelle par le générateur :
 
 ```js
