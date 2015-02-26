@@ -9,13 +9,13 @@ function run (generator) {
 
   function go(result) {
     if (result.done) return result.value;
-    
+
     return result.value.then(function (value) {
       return go(it.next(value));
     }, function (error) {
       return go(it.throw(error));
     });
-    
+
   }
 
   go(it.next());

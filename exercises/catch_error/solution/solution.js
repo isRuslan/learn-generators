@@ -3,7 +3,7 @@ function *upper (items) {
     try {
       yield items[i].toUpperCase();
     } catch (e) {
-      yield null;  
+      yield null;
     }
   }
 }
