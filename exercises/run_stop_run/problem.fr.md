@@ -32,11 +32,10 @@ Ceci met le générateur en pause jusqu'à ce qu’on appelle sa méthode `next(
 (voir point 3 ci-dessous).  On relancera le générateur en envoyant la chaîne
 `"bar"` via `next()`, qui deviendra du coup la valeur retournée par
 l’expression `yield` à l’intérieur de `foo()`, et sera donc affectée à la
-variable `stop`.  Les contextes sont sauvegardés à chque changement d’état
+variable `stop`.  Les contextes sont sauvegardés à chaque changement d’état
 « départ -> arrêt -> reprise ».
 
-**3)** Le résutlat de la fonction `foo()` est équipé d’une méthode `next()`,
-laquelle renvoie un objet de type `{ value: VALEUR_DU_YIELD, done: ON_A_FINI }`.
+**3)** Le résultat de la fonction `foo()` est un objet disposant d’une méthode `next()`.  Cette méthode renvoie elle-même un objet de type `{ value: VALEUR_DU_YIELD, done: ON_A_FINI }`.
 
 ## Docs
 

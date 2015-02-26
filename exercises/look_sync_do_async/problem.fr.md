@@ -2,9 +2,9 @@ Ayez l’air synchrone, tout en étant, en fait, asynchrone.
 
 ## Infos
 
-Les générateurs nous permettent de masquer l’**asynchronicité** comme un
-simple détail d’implémentation, nous permettant ainsi d‘écrire du code
-facile à lire, maintenable, d’aspect synchrone.
+Les générateurs nous permettent de masquer l’**asynchronisme**.  Il peut être
+traité comme un simple détail d’implémentation, nous permettant ainsi d’écrire
+du code à l’aspect synchrone facile à lire et à maintenir.
 
 Kékidi ?!
 
@@ -12,8 +12,8 @@ Les générateurs peuvent **suspendre leur exécution** le temps que les
 appels asynchrones aboutissent.
 
 Par exemple, disons que vous souhaitez lire le contenu du répertoire courant
-à l’aide de la fonction ``fs.readdir(dir, cb)`, mais sans retomber dans
-les fonctions de rappel :
+à l’aide de la fonction ``fs.readdir(dir, cb)`, mais sans sombrer dans l’enfer
+des fonctions de rappel :
 
 ```js
 var fs = require('fs');
@@ -29,7 +29,7 @@ function run (generator) {
 }
 
 run(function* (done) {
-  // Lisons le dossier d’exercices de `learn-generators`
+  // Lisons le dossier des exercices de `learn-generators`
   var exercises = yield fs.readdir('exercises', done);
   console.log(exercises); // [ 'look_sync_do_async', …, 'run_stop_run' ]
 });
@@ -72,7 +72,7 @@ Utilisez le code de départ suivant :
 var fs = require('fs');
 
 function run (generator) {
-  // Améliorez le `run` ci-dessus
+  // Améliorez le `run` vu ci-avant
 }
 
 run(function* (done) {

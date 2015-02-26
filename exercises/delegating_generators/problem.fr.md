@@ -30,7 +30,8 @@ for (var v of main()) {
 ## Défi
 
 Écrivez une fonction générateur `flat()` qui prend des tableaux imbriqués
-(un tableau de tableaux de tableaux de…) et les aplatit vers un seul niveau.
+(un tableau de tableaux de tableaux de…) et les aplatit en les traversant
+comme s’il n’y avait qu’un seul niveau.
 
 ## Base de travail
 

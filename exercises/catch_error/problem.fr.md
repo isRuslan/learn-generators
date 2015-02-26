@@ -48,7 +48,7 @@ try {
 de caractères et `yield` chacune en majuscule, à tour de rôle.
 
 **Le souci :** quelqu’un a envoyé un nombre au lieu d’une chaîne et `upper()`
-est cassée.  Merci de la réparer.  Si `upper()` se prend un nombre, elle
+est cassée.  Merci de la réparer.  Si `upper()` reçoit un nombre, elle
 devrait renvoyer `null` au lieu du texte en majuscules.
 
 ## Base de travail
