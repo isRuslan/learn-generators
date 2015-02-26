@@ -24,9 +24,10 @@
   ],
   "dependencies": {
     "colors-tmpl": "~1.0.0",
+    "combined-stream": "0.0.7",
     "has-generators": "^1.0.1",
-    "workshopper": "^2.1.1",
-    "workshopper-exercise": "^2.1.0",
+    "workshopper": "^2.3.1",
+    "workshopper-exercise": "^2.3.0",
     "workshopper-wrappedexec": "^0.1.2"
   },
   "license": "MIT"

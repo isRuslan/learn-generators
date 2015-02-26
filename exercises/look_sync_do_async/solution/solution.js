@@ -8,7 +8,7 @@ function run (generator) {
     it.next(result);
   }
 
-  go(); 
+  go();
 }
 
 run(function* (done) {
@@ -19,6 +19,6 @@ run(function* (done) {
   } catch (err) {
     firstFile = null;
   }
-  
+
   console.log(firstFile);
 });

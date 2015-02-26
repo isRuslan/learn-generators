@@ -1,0 +1,19 @@
+{
+  "title": "Apprenez les Générateurs",
+  "subtitle": "Une intro aux générateurs ES6 via des exercices autonomes.",
+  "menu": {
+    "credits": "CRÉDITS"
+  },
+  "error": {
+    "didnt_use_generators": "On dirait que vous n’avez pas utilisé les générateurs (ಠ_ಠ)",
+    "has_generators": "{red}Vous avez besoin de Node.js >= 0.11.x ou io.js >= 1.0.x pour utiliser les générateurs.{/red}\n\nCeci peut vous être utile :\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n{/bold} https://github.com/tj/n"
+  },
+  "exercise": {
+    "RUN STOP RUN": "DÉPART ARRÊT REPRISE",
+    "GENERATOR ITERATOR": "ITÉRATEUR GÉNÉRATEUR",
+    "DELEGATING GENERATORS": "DÉLÉGATION DE GÉNÉRATEURS",
+    "CATCH ERROR!": "RATTRAPE L'ERREUR !",
+    "LOOK SYNC. DO ASYNC.": "AIE L'AIR SYNC.  RESTE ASYNC.",
+    "LOOK SYNC. MAKE PROMISE.": "AIE L'AIR SYNC.  FAIS UNE PROMESSE."
+  }
+}
