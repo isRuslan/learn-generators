@@ -1,4 +1,4 @@
-{yellow}{bold}Vous pouvez apprendre les générateurs grâce à ces personnes :{/bold}{/yellow}
+{yellow}{bold}Vous pouvez apprendre les générateurs grâce à ces personnes:{/bold}{/yellow}
 
 {bold}Nom                    GitHub          Twitter{/bold}
 -----------------------------------------------------
