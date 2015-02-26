@@ -1,0 +1,4 @@
+{yellow}{bold}You can learn generators due to this people:{/bold}{/yellow}
+
+{bold}Name                   GitHub          Twitter{/bold}
+-----------------------------------------------------

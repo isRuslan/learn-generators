@@ -1,0 +1,2 @@
+
+{yellow}{bold}Rod Vagg (@rvagg){/yellow}{/bold} a réalisé le framework d’ateliers (⌐■_■)
