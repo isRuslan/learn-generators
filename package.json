@@ -11,7 +11,7 @@
     "start": "node --harmony learn-generators.js"
   },
   "bin": {
-    "learn-generators": "./start"
+    "learn-generators": "./start.js"
   },
   "preferGlobal": true,
   "keywords": [
