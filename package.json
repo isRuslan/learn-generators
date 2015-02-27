@@ -2,13 +2,13 @@
   "name": "learn-generators",
   "description": "Learn ES6 generators in practice.",
   "author": "Ruslan Ismagilov <is.ismagilov@gmail.com>",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:isRuslan/learn-generators.git"
   },
   "scripts": {
-    "start": "node --harmony learn-generators.js"
+    "start": "./start.js"
   },
   "bin": {
     "learn-generators": "./start.js"
