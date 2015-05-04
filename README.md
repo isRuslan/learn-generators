@@ -9,7 +9,9 @@ Learn ES6 Generators
 
 <a href="https://twitter.com/intent/tweet?hashtags=nodeschool&via=isRuslan&original_referer=https://github.com/&text=Learn+ES6+Generators+with&tw_p=tweetbutton&url=https://github.com/isRuslan/learn-generators" target="_blank">
   <img src="http://jpillora.com/github-twitter-button/img/tweet.png"></img>
-</a>
+</a> [![npm version](https://badge.fury.io/js/learn-generators.svg)](http://badge.fury.io/js/learn-generators)
+
+You can ask questions in [nodeschool/discussions](https://github.com/nodeschool/discussions) board:   [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nodeschool/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Install or Update
 
