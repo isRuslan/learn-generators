@@ -92,6 +92,7 @@ You can learn generators due to this people:
 <tr><td align="left">Max Ogden</td><td><a href="https://github.com/maxogden">@maxogden</a></td><td><a href="http://twitter.com/maxogden">@maxogden</a></td></tr>
 <tr><td align="left">Christophe Porteneuve</td><td><a href="https://github.com/tdd">@tdd</a></td><td><a href="http://twitter.com/porteneuve">@porteneuve</a></td></tr>
 <tr><td align="left">Julien Fontanet</td><td><a href="https://github.com/julien-f">@julien-f</a></td><td><a href="http://twitter.com/JulienFontanet">@JulienFontanet</a></td></tr>
+<tr><td align="left">Shim</td><td><a href="https://github.com/marocchino">@marocchino</a></td><td><a href="http://twitter.com/marocchino">@marocchino</a></td></tr>
 </tbody>
 </table>
 

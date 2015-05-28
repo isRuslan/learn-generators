@@ -1,0 +1,19 @@
+{
+  "title": "Generator 배우기",
+  "subtitle": "직접 해보는 워크숍으로 하는 ES6 제너레이터의 소개.",
+  "menu": {
+    "credits": "CREDITS"
+  },
+  "error": {
+    "didnt_use_generators": "generator를 사용하지 않으신 것 같습니다 (ಠ_ಠ)",
+    "has_generators": "{red}generator를 사용하려면 nodejs >= 0.11.x나 iojs >= 1.0.x를 사용하셔야 합니다.{/red}\n\n아마 이게 유용할 것 같습니다.\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n{/bold} https://github.com/tj/n"
+  },
+  "exercise": {
+    "RUN STOP RUN": "실행 멈춤 실행",
+    "GENERATOR ITERATOR": "제너레이터 이터레이터",
+    "DELEGATING GENERATORS": "제너레이터 위임하기",
+    "CATCH ERROR!": "에러 잡기!",
+    "LOOK SYNC. DO ASYNC.": "동기로 보고, 비동기로 하기.",
+    "LOOK SYNC. MAKE PROMISE.": "동기로 보고, 프라미스 만들기."
+  }
+}
