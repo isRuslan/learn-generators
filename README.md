@@ -13,6 +13,8 @@ Learn ES6 Generators
 
 You can ask questions in [nodeschool/discussions](https://github.com/nodeschool/discussions) board:   [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nodeschool/discussions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+Send an anonymous feedback about `learn-generators` here: <a href="https://docs.google.com/forms/d/1f_9BvE7Z61dRRg1uKslgNJMQ1AmeO_uTExC-QltBbKY" target="_blank">google/form</a>.
+
 ## Install or Update
 
 >You need nodejs >= 0.12.x or iojs >= 1.0.x
@@ -76,7 +78,9 @@ $ learn-generators verify mysolution.js
 
 ## Stuck?
 
-Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/isRuslan/learn-generators/issues). 
+Feedback and criticism is welcome, please log your troubles in [issues](https://github.com/isRuslan/learn-generators/issues).
+Or you can send an anonymous feedback here: <a href="https://docs.google.com/forms/d/1f_9BvE7Z61dRRg1uKslgNJMQ1AmeO_uTExC-QltBbKY" target="_blank">google/form</a>.
+
 
 ## Thanks
 
