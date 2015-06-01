@@ -1,0 +1,4 @@
+{yellow}{bold}이분들의 노력으로 generator를 배울 수 있습니다.{/bold}{/yellow}
+
+{bold}이름                   GitHub          Twitter{/bold}
+-----------------------------------------------------

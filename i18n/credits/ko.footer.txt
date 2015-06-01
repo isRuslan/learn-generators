@@ -1,0 +1,2 @@
+
+{yellow}{bold}Rod Vagg (@rvagg){/yellow}{/bold}가 워크쇼퍼 프레임워크를 만들었습니다.(⌐■_■)
