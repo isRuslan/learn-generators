@@ -6,7 +6,7 @@
 이전 **콜백**과 비슷하지만, 프라미스도 결과를 기다리게 할 수 있고 결과를 yield할
 수 있습니다.
 
-**콜백 연습문제**와 같은 예제를 보겠습니다. **exercise** 디렉터리를 읽지만
+**콜백 연습 문제**와 같은 예제를 보겠습니다. **exercise** 디렉터리를 읽지만
 이번엔 프라미스입니다.
 ```js
 var fs = require('fs');
@@ -24,7 +24,7 @@ function readDir(dir) {
 }
 
 run(function* () {
-  // 콜백 연습문제와 거의 같은 제너레이터
+  // 콜백 연습 문제와 거의 같은 제너레이터
   var exercises = yield readDir('exercises');
   console.log(exercises); // [ 'look_sync_do_async', ..., 'run_stop_run' ]
 });
@@ -43,7 +43,7 @@ run(function* () {
 ## 해야할 일
 
 제너레이터를 인자로 받는 `run` 함수를 작성하세요. 제너레이터를 시작하고
-**프라미스 값** `foo`를 yield하세요. `run`은 **콜백 연습문제**에서 사용했던 것을
+**프라미스 값** `foo`를 yield하세요. `run`은 **콜백 연습 문제**에서 사용했던 것을
 참고하세요.
 
 **이 템플릿을 사용하세요.**
