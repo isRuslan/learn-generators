@@ -25,7 +25,7 @@ function run (generator) {
 }
 
 run(function* (done) {
-  // `learn-generators` 연습문제 폴더 읽기
+  // `learn-generators` 연습 문제 폴더 읽기
   var exercises = yield fs.readdir('exercises', done);
   console.log(exercises); // [ 'look_sync_do_async', ..., 'run_stop_run' ]
 });
