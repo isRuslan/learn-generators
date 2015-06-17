@@ -9,10 +9,10 @@ function fpath (f) {
     return path.join(__dirname, f)
 }
 
-var learnGenerators = workshopper({
+const learnGenerators = workshopper({
     name        : 'learn-generators',
     appDir      : __dirname,
-    languages   : ['en', 'fr', 'ko'],
+    languages   : ['en', 'fr', 'ko', 'ru'],
     menuItems   : [{
         name : 'credits',
         handler : credits
