@@ -5,7 +5,7 @@ Learn ES6 Generators
 
 ![learn-generators](https://raw.githubusercontent.com/isRuslan/learn-generators/master/learn-generators.jpg)
 
-[![NPM](https://nodei.co/npm/learn-generators.png?downloads=true&stars=true)](https://nodei.co/npm/learn-generators/)
+[![NPM](https://nodei.co/npm/learn-generators.png)](https://nodei.co/npm/learn-generators/)
 
 <a href="https://twitter.com/intent/tweet?hashtags=nodeschool&via=isRuslan&original_referer=https://github.com/&text=Learn+ES6+Generators+with&tw_p=tweetbutton&url=https://github.com/isRuslan/learn-generators" target="_blank">
   <img src="http://jpillora.com/github-twitter-button/img/tweet.png"></img>
@@ -28,7 +28,7 @@ $ npm install learn-generators -g
 #### 0. General information
 
 `learn-generators` is i18n-friendly workshopper, currently you can learn on English or French language.
-Hit `choose language` menu item or selet language with `-l` flag with aviable prefixes: `fr`, `en`. Type:
+Hit `choose language` menu item or selet language with `-l` flag with aviable prefixes: `en`, `fr`, `ko` and `ru`. Type:
 
 ```
 $ learn-generators -l
