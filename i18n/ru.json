@@ -3,11 +3,11 @@
   "subtitle": "Серия практических заданий по изучению ES6 генераторов",
   "menu": {
     "credits": "БЛАГОДАРНОСТЬ",
-    "completed": "DONE"
+    "completed": "COMPLETED"
   },
   "error": {
     "didnt_use_generators": "Кажется Вы не использовали генераторы в своем решении (ಠ_ಠ)",
-    "has_generators": "{red}Для работы с генераторами Вам необходимо установить nodejs >= 0.11.x or iojs >= {/red}\n\nВозможно, для этого вам понадобится:\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n{/bold} https://github.com/tj/n"
+    "has_generators": "{red}Для работы с генераторами Вам необходимо установить nodejs >= 0.11.x или iojs >= 1.0.x{/red}\n\nВозможно, для этого вам понадобится:\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n  {/bold} https://github.com/tj/n"
   },
   "exercise": {
     "RUN STOP RUN": "RUN STOP RUN",
