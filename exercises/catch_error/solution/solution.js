@@ -1,7 +1,7 @@
 function *upper (items) {
-  for (var i in items) {
+  for (var item of items) {
     try {
-      yield items[i].toUpperCase();
+      yield item.toUpperCase();
     } catch (e) {
       yield null;
     }
