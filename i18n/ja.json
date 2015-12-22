@@ -2,7 +2,7 @@
   "title": "Learn Generators",
   "subtitle": "ES6 generators の入門用ワークショッパーです",
   "menu": {
-    "credits": "CREDITS"
+    "credits": "謝辞"
   },
   "error": {
     "didnt_use_generators": "generatorsが使用されていません",
