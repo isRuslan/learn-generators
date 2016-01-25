@@ -1,8 +1,9 @@
-Introduction to ES6 Generators.
+ES6のGenerator関数とは
 
-## Info
-Generators are functions which can be stopped while in process
-and run later as many times as you want. Example:
+## 基礎知識
+Generatorは実行中に中断と再開が何度もできる関数です。
+
+例:
 
 ```js
 function *foo () {
@@ -18,31 +19,32 @@ console.log( G.next('bar') );
 // { value: undefined, done: true }
 ```
 
-What was that? There are some new things to notice:
+プログラムはどういう動きをしたのでしょう？
+いくつかの新たな注意点があります。
 
-**1)** `*` - just a sign that foo is generator. You can put it anywhere between
-the `function` keyword and the function name, it does not matter exactly where.
+**1)** `*` - はfooがgeneratorであることを意味します。`function` キーワードと関数名の間であればどこに書いても構いません。
 
-**2)** The `yield` expression - stop the generator and send out `woo` string.
-This pauses the state of the generator until we call `next` (see **3)** below).
-We restart the generator by sending `bar` string into `foo` which becomes the 
-value returned by the `yield` expression inside `foo` (which gets assigned
-to `stop`). Context between all `run -> stop -> run` will be saved.
+**2)** `yield` 式 - はgeneratorを停止し文字列 `woo` を返します。
+これはgeneratorの状態を `next` が呼ばれるまで一旦停止しします。
+ (以下の**3)**を参照).
+generator `foo` に `next` メソッドから `bar` を送って再開するとその値が `foo` の内部の `yield` 式の戻り値になります。 
+(さらにそれが変数 `stop` に代入されます).
+ `実行 -> 停止 -> 実行` の間の全ての内部状態は保存されます。 
 
-**3)** `foo` function has `next` method that returns an object like
+**3)** `foo` 関数は `next` メソッドを持ち、以下の様なオブジェクトを返します。
 `{value: VALUE_FROM_YIELD, done: IS_THIS_FINISHED}`.
 
-## Docs
+## ドキュメント
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*
  - http://wiki.ecmascript.org/doku.php?id=harmony:generators
 
-## Task
+## 課題
 
-Write a `range` generator-function that takes **from** and **to** arguments.
+`range`というgenerator関数に引数**from**と**to**を渡してください。
 
-Print the numbers as strings within the specified range, one per line.
+**from**と**to**の範囲の数値を文字列として１行ずつプリントしてください。
 
-**Follow this boilerplate:**
+**以下の雛形を参考にしてください**
 
 ```js
 function *range(from, to) {
