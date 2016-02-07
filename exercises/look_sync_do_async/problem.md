@@ -1,7 +1,7 @@
 Look sync. Do async.
 
 ## Info
-Generators allows us to hide the **asynchronicity** as an implementation
+Generators allow us to hide the **asynchronicity** as an implementation
 detail and write easy-reading, maintainable, synchronous-looking code.
 
 Wat?
