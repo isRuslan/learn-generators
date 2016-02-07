@@ -52,7 +52,7 @@ trace the execution flow of the program.
  - http://en.wikipedia.org/wiki/Thunk
  
 ## Task
-Add error handling to this boilerplate. Teach `run` to throw on exception and
+Add error handling to this boilerplate. Teach `run` to throw an exception and
 catch that in generator. `firstFile` should be `null` if it doesn't exist.
 
 **Follow this boilerplate:**
