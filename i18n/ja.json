@@ -10,8 +10,8 @@
   },
   "exercise": {
     "RUN STOP RUN": "実行　停止　実行",
-    "GENERATOR ITERATOR": "GENERATORとイテレータ",
-    "DELEGATING GENERATORS": "GENERATORをデリゲートする",
+    "GENERATOR ITERATOR": "ジェネレータとイテレータ",
+    "DELEGATING GENERATORS": "ジェネレータをデリゲートする",
     "CATCH ERROR!": "エラーをキャッチ!",
     "LOOK SYNC. DO ASYNC.": "同期のような非同期",
     "LOOK SYNC. MAKE PROMISE.": "PROMISEで同期処理のように"

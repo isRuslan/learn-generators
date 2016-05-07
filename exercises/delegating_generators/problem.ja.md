@@ -1,9 +1,8 @@
-Generators inside generators.
+ジェネレータの中のジェネレータ
 
-## Info
-We can delegate iteration control from our generator to another one.
-`yield * expression` will do the trick, `*` means that **expression**
-is a generator too, so we can send message to it.
+## 基礎知識
+反復の制御をジェネレータの中から他のジェネレータに委任することができます。
+`yield * 式` と記述すると `*`**式**もジェネレータになり、それにメッセージを送ることができます。
 
 ```js
 function *foo() {
@@ -22,17 +21,18 @@ for (var v of main()) {
 // 1 2 3
 ```
 
-## Docs
+## ドキュメント
  - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*
 
-## Task
-Write generator-function `flat` that takes nested array inside and flattens it.
+## 課題
+ジェネレータ関数`flat`を作成してください。
+関数は入れ子になった配列を受取り、それらの全要素を順番に展開します。
 
-**Follow this boilerplate:**
+**以下の雛形を参考にしてください**
 
 ```js
 function *flat (arr) {
-  // your code goes here  
+  // ここにコードを書きます  
 }
 
 var A = [1, [2, [3, 4], 5], 6];

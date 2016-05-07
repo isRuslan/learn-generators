@@ -48,7 +48,7 @@ generator `foo` に `next` メソッドから `bar` を送って再開すると�
 
 ```js
 function *range(from, to) {
-  // your code goes here
+  // ここにコードを書きます
 }
 
 for (var r of range(5, 10)) {
