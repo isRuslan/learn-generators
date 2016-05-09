@@ -12,7 +12,7 @@ function fpath (f) {
 const learnGenerators = workshopper({
     name        : 'learn-generators',
     appDir      : __dirname,
-    languages   : ['en', 'fr', 'ko', 'ru'],
+    languages   : ['en', 'fr', 'ko', 'ru', 'ja'],
     menuItems   : [{
         name : 'credits',
         handler : credits

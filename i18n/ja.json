@@ -1,0 +1,19 @@
+{
+  "title": "Learn Generators",
+  "subtitle": "ES6 generators の入門用ワークショッパーです",
+  "menu": {
+    "credits": "謝辞"
+  },
+  "error": {
+    "didnt_use_generators": "generatorsが使用されていません",
+    "has_generators": "{red}nodejs >= 0.11.x または iojs >= 1.0.x 以上のバージョンがgeneratorsには必要です{/red}\n\nこちらを参照してください:\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n{/bold} https://github.com/tj/n"
+  },
+  "exercise": {
+    "RUN STOP RUN": "実行　停止　実行",
+    "GENERATOR ITERATOR": "ジェネレータとイテレータ",
+    "DELEGATING GENERATORS": "ジェネレータをデリゲートする",
+    "CATCH ERROR!": "エラーをキャッチ!",
+    "LOOK SYNC. DO ASYNC.": "同期のような非同期",
+    "LOOK SYNC. MAKE PROMISE.": "PROMISEで同期処理のように"
+  }
+}
