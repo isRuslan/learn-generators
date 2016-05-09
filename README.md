@@ -97,7 +97,7 @@ You can learn generators due to this people:
 <tr><td align="left">Christophe Porteneuve</td><td><a href="https://github.com/tdd">@tdd</a></td><td><a href="http://twitter.com/porteneuve">@porteneuve</a></td></tr>
 <tr><td align="left">Julien Fontanet</td><td><a href="https://github.com/julien-f">@julien-f</a></td><td><a href="http://twitter.com/JulienFontanet">@JulienFontanet</a></td></tr>
 <tr><td align="left">Shim</td><td><a href="https://github.com/marocchino">@marocchino</a></td><td><a href="http://twitter.com/marocchino">@marocchino</a></td></tr>
-<tr><td align="left"></td>Kuniyoshi Tone<td><a href="https://github.com/kunichan2013">@kunichan2013</a></td><td></td></tr>
+<tr><td align="left">Kuniyoshi Tone</td><td><a href="https://github.com/kunichan2013">@kunichan2013</a></td><td></td></tr>
 </tbody>
 </table>
 
