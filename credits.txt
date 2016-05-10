@@ -4,4 +4,4 @@ Max Ogden              @maxogden       @maxogden
 Christophe Porteneuve  @tdd            @porteneuve
 Julien Fontanet        @julien-f       @JulienFontanet
 Shim                   @marocchino     @marocchino
-Kuniyoshi Tone         @kunichan2013
+Kuniyoshi Tone         @kunichan2013   @kunitone
