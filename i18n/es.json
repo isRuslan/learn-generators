@@ -1,0 +1,19 @@
+{
+  "title": "Aprendiendo generadores",
+  "subtitle": "Una introducción de los generadores ES6 a travéz de un conjunto de ejercicios autoguiados.",
+  "menu": {
+    "credits": "CRÉDITOS"
+  },
+  "error": {
+    "didnt_use_generators": "Parece que no ha usado generadores (ಠ_ಠ)",
+    "has_generators": "{red}Necesitas nodejs >= 0.11.x o iojs >= 1.0.x para trabajar con generadores.{/red}\n\nPuedes encontrar esto útil:\n  {bold}nvm{/bold} https://github.com/creationix/nvm\n  {bold}n{/bold} https://github.com/tj/n"
+  },
+  "exercise": {
+    "RUN STOP RUN": "CORRE DETENTE CORRE",
+    "GENERATOR ITERATOR": "GENERADOR ITERADOR",
+    "DELEGATING GENERATORS": "DELEGANDO GENERADORES",
+    "CATCH ERROR!": "CAPTURANDO ERRORES!",
+    "LOOK SYNC. DO ASYNC.": "PARECE SÍNCRONO. HAZLO ASÍNCRONO.",
+    "LOOK SYNC. MAKE PROMISE.": "PARECE SÍNCRONO. HAS UNA PROMESA."
+  }
+}
