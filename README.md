@@ -98,6 +98,7 @@ You can learn generators due to this people:
 <tr><td align="left">Julien Fontanet</td><td><a href="https://github.com/julien-f">@julien-f</a></td><td><a href="http://twitter.com/JulienFontanet">@JulienFontanet</a></td></tr>
 <tr><td align="left">Shim</td><td><a href="https://github.com/marocchino">@marocchino</a></td><td><a href="http://twitter.com/marocchino">@marocchino</a></td></tr>
 <tr><td align="left">Kuniyoshi Tone</td><td><a href="https://github.com/kunichan2013">@kunichan2013</a></td><td><a href="http://twitter.com/kunitone">@kunitone</a></td></tr>
+<tr><td align="left">Nicolás Bevilacqua</td><td><a href="https://github.com/nicobevilacqua">@nicobevilacqua</a></td><td><a href="http://twitter.com/NicoBeviIacqua_">@NicoBeviIacqua_</a></td></tr>
 </tbody>
 </table>
 
