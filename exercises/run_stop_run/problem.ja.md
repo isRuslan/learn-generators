@@ -8,7 +8,7 @@ Generatorは実行中に中断と再開が何度もできる関数です。
 ```js
 function *foo () {
   var stop = yield 'woo';
-  console.log(stop, 'inside foo')
+  console.log(stop, 'inside foo');
 }
 var G = foo();
 
@@ -27,9 +27,9 @@ console.log( G.next('bar') );
 **2)** `yield` 式 - はgeneratorを停止し文字列 `woo` を返します。
 これはgeneratorの状態を `next` が呼ばれるまで一旦停止しします。
  (以下の**3)**を参照).
-generator `foo` に `next` メソッドから `bar` を送って再開するとその値が `foo` の内部の `yield` 式の戻り値になります。 
+generator `foo` に `next` メソッドから `bar` を送って再開するとその値が `foo` の内部の `yield` 式の戻り値になります。
 (さらにそれが変数 `stop` に代入されます).
- `実行 -> 停止 -> 実行` の間の全ての内部状態は保存されます。 
+ `実行 -> 停止 -> 実行` の間の全ての内部状態は保存されます。
 
 **3)** `foo` 関数は `next` メソッドを持ち、以下の様なオブジェクトを返します。
 `{value: VALUE_FROM_YIELD, done: IS_THIS_FINISHED}`.

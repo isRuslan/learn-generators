@@ -7,7 +7,7 @@ ES6 제너레이터의 소개
 ```js
 function *foo () {
   var stop = yield 'woo';
-  console.log(stop, 'inside foo')
+  console.log(stop, 'inside foo');
 }
 var G = foo();
 

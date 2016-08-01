@@ -7,7 +7,7 @@ and run later as many times as you want. Example:
 ```js
 function *foo () {
   var stop = yield 'woo';
-  console.log(stop, 'inside foo')
+  console.log(stop, 'inside foo');
 }
 var G = foo();
 
@@ -25,7 +25,7 @@ the `function` keyword and the function name, it does not matter exactly where.
 
 **2)** The `yield` expression - stop the generator and send out `woo` string.
 This pauses the state of the generator until we call `next` (see **3)** below).
-We restart the generator by sending `bar` string into `foo` which becomes the 
+We restart the generator by sending `bar` string into `foo` which becomes the
 value returned by the `yield` expression inside `foo` (which gets assigned
 to `stop`). Context between all `run -> stop -> run` will be saved.
 

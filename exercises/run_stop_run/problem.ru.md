@@ -7,7 +7,7 @@
 ```js
 function *foo () {
   var stop = yield 'woo';
-  console.log(stop, 'inside foo')
+  console.log(stop, 'inside foo');
 }
 var G = foo();
 
