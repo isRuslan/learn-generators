@@ -9,7 +9,7 @@ fois qu’on le souhaite.  Par exemple :
 ```js
 function *foo () {
   var stop = yield 'woo';
-  console.log(stop, 'dans foo')
+  console.log(stop, 'dans foo');
 }
 var G = foo();
 

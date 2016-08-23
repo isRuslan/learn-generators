@@ -7,7 +7,7 @@ ejecutándose y correrse luego tantas veces como tu quieras. Un ejemplo:
 ```js
 function *foo () {
   var stop = yield 'woo';
-  console.log(stop, 'dentro de foo')
+  console.log(stop, 'dentro de foo');
 }
 var G = foo();
 
