@@ -2,7 +2,7 @@
   "name": "learn-generators",
   "description": "Learn ES6 generators in practice.",
   "author": "Ruslan Ismagilov <is.ismagilov@gmail.com>",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:isRuslan/learn-generators.git"
