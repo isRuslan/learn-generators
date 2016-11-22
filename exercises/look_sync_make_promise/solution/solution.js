@@ -8,6 +8,7 @@ function run (generator) {
   var it = generator();
 
   function go(result) {
+	// take a look also on `Generator.prototype.return`
     if (result.done) return result.value;
 
     return result.value.then(function (value) {
