@@ -34,7 +34,7 @@ Hit `choose language` menu item or selet language with `-l` flag with aviable pr
 $ learn-generators -l
 ```
 
-To see aviable languages and select the language which you like.
+To see available languages and select the language which you like.
 
 You can also get all available commads in `help`:
 
