@@ -28,7 +28,7 @@ $ npm install learn-generators -g
 #### 0. General information
 
 `learn-generators` is i18n-friendly workshopper, currently you can learn on English or French language.
-Hit `choose language` menu item or selet language with `-l` flag with aviable prefixes: `en`, `fr`, `ko`, `ja`, `es` and `ru`. Type:
+Hit `choose language` menu item or selet language with `-l` flag with avaiable prefixes: `en`, `fr`, `ko`, `ja`, `es` and `ru`. Type:
 
 ```
 $ learn-generators -l
